@@ -7,7 +7,7 @@ import utilities.Driver;
 
 public class C01_PagesFirstTest {
 
-    @Test
+    @Test (groups = {"reg2","smoke1","reg4"})
     public void amazonTest(){
 
         // amazon anasayfaya gidelim

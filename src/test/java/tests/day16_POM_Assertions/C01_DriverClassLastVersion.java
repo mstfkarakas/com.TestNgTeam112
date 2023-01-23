@@ -9,7 +9,7 @@ public class C01_DriverClassLastVersion {
     // 3 tane test methodu olusturalim
 
     // 1. method'da amazon'a gidip, url'in amazon icerdigini test edin
-    @Test
+    @Test (groups = {"reg1","reg2"})
     public void amazonTest() {
 
         Driver.getDriver().get(ConfigReader.getProperty("amazonURL"));
@@ -22,7 +22,7 @@ public class C01_DriverClassLastVersion {
     // 2. method'da Wisequarter anasayfaya gidip, title'in Wise Quarter icerdigini test edin
 
     @Test
-    public void WisequarterTest() {
+    public void WiseQuarterTest() {
         Driver.getDriver().get(ConfigReader.getProperty("wiseURL"));
         String expectedContent = "Wise Quarter";
         String actualTitle = Driver.getDriver().getTitle();
@@ -32,7 +32,7 @@ public class C01_DriverClassLastVersion {
     // 3. method'da facebook anasayfaya gidip, title'in Facebook icerdigini test edin
 
     @Test
-    public void test03() {
+    public void Facebook() {
         Driver.getDriver().get(ConfigReader.getProperty("faceURL"));
         String expectedContent = "Facebook";
         String actualTitle = Driver.getDriver().getTitle();

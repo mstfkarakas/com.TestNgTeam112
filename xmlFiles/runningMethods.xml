@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Running Methods">
+    <!--    We can exclude or include any test methods to the test suit-->
+
+    <test name="We will run Methods">
+        <classes>
+            <class name="tests.day16_POM_Assertions.C01_DriverClassLastVersion">
+                <methods>
+                    <exclude name="Facebook"></exclude>
+                </methods>
+                
+            </class>
+            
+            
+            <class name="tests.day14_testNgFramework.C02_Ignore">
+                
+                
+            </class>
+            
+            <class name="tests.day14_testNgFramework.C04_DriverFirstTest"></class>
+            
+        </classes>
+    </test>
+</suite>

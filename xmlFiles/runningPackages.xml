@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="runningPAckages">
+    <test name="We will execute packages">
+        <packages>
+            <package name="tests.day14_testNgFramework"></package>
+            <package name="tests.day15_hard_soft_assertions">
+                <!--                you can choose anything to include or exclude here between package starting and ending-->
+
+            </package>
+
+
+        </packages>
+    </test>
+</suite>

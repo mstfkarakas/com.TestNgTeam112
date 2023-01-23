@@ -31,10 +31,10 @@ public class C04_ConfigurationFileUse {
         AmazonPage amazonPage = new AmazonPage();
         amazonPage.searchBox.sendKeys(ConfigReader.getProperty("amazonSearchedContent") + Keys.ENTER);
 
-        String expectedContent = ConfigReader.getProperty("amazonExpectedContent");
+        String amazonExpectedSearchContent = ConfigReader.getProperty("amazonExpectedSearchContent");
         String actualSearchedContent = amazonPage.searchResultElement.getText();
 
-        Assert.assertTrue(actualSearchedContent.contains(expectedContent));
+        Assert.assertTrue(actualSearchedContent.contains(amazonExpectedSearchContent));
 
 
         Driver.closeDriver();

@@ -9,7 +9,7 @@ import utilities.Driver;
 
 public class C04_DriverFirstTest {
 
-    @Test
+    @Test (groups = {"reg1","smoke1","reg3"})
     public void test01(){
 
     /*

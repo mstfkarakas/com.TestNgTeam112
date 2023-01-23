@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Running Groups" verbose="1">
+    <!--    verbose is for setting a value for details mentioned on console, 3 is enough-->
+
+    <!--    If we want to execute a group of test methods. First we need to give the group name to methods
+      @Test(groups = "reg1")  here we gave reg1 group name to this test method
+
+        ::::    We should also mention the packages of the methods with the group name ::::
+
+        -->
+    <test name="We will run Groups">
+        <groups>
+
+            <run>
+                <include name="reg1"></include>
+                <include name="reg2"></include>
+                <exclude name="smoke1"></exclude>  <!-- smoke1 ismi gecen grup adli test(ler) calismaz -->
+            </run>
+
+        </groups>
+        <packages>
+            <package name="tests.day14_testNgFramework"></package>
+            <package name="tests.day15_hard_soft_assertions"></package>
+            <package name="tests.day16_POM_Assertions"></package>
+            <package name="tests.day17_ReusableMethods_XmlFiles"></package>
+<!--        <package name="tests.*"> </package>   This includes all the packages  -->
+
+            <!--            If you want to search these group names under all packages : -->
+            <!--            <package name="tests.*"></package>-->
+
+        </packages>
+    </test>
+</suite>

@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class C01_HardAssert {
 
-    @Test
+    @Test (groups = "reg1")
     public void test01(){
 
 

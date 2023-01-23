@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 import pages.QualitydemyPage;
 import utilities.Driver;
 
-public class C02_qualitydemyLoginTest {
+public class C02_QualitydemyPositiveLoginTest {
 
-    @Test
+    @Test (groups = {"reg2","smoke"})
     public void test01(){
 
         // QUALITYDEMY ANA SAYFAYA GIDIN
@@ -28,7 +28,7 @@ public class C02_qualitydemyLoginTest {
         Assert.assertTrue(qualitydemyPage.successfulLoginElement.isDisplayed());
 
         // sayfayi kapatin
-        Driver.closeDriver();
+        Driver.quitDriver();
 
     }
 }

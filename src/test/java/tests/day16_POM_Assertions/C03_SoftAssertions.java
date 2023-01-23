@@ -30,7 +30,7 @@ public class C03_SoftAssertions {
 
         int num = 23;
 
-        Assert.assertTrue(num % 2 == 0, "Number must be even");
+        Assert.assertFalse(num % 2 == 0, "Number must be even");
         Assert.assertTrue(num > 100, "Number must be greater than 100");
         Assert.assertTrue(num < 1000, "Number must be smaller than 1000");
         Assert.assertFalse(num % 3 == 0, "Number must not be a multiple of 3");

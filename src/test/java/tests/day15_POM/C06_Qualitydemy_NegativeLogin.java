@@ -8,9 +8,9 @@ import pages.QualitydemyPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class C06_Qualitydemy_NegatifLogin {
+public class C06_Qualitydemy_NegativeLogin {
 
-    @Test
+    @Test (groups = {"reg1","smoke"})
     public void test01() {
 
         // QUALITYDEMY ANA SAYFAYA GIDIN
@@ -34,7 +34,7 @@ public class C06_Qualitydemy_NegatifLogin {
         Assert.assertTrue(qualitydemyPage.emailBox.isEnabled());
 
         // sayfayi kapatin
-      //  Driver.closeDriver();
+        Driver.quitDriver();
 
     }
 

@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 import pages.QualitydemyPage;
 import utilities.Driver;
 
-public class C03_qualitydemyNegatifLoginTest {
+public class C03_QualitydemyNegativeLoginTest {
 
-    @Test
+    @Test (groups = "reg2")
     public void test01(){
 
         // qualitydemy anasayfaya gidin
