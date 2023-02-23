@@ -16,9 +16,9 @@ public class AmazonPage {
     // Webdriver driver objesini page class'larina tanimlamak icin
     // PageFactory class'indan initElements() kullanilir
 
-    public AmazonPage(){
+    public AmazonPage(){   // ilk is parametresiz constructor olusturmak
 
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriver(),this);  // ikinci is de bu satiri yazmak.
         // bu ayari constructor icine koyma sebebimiz :
         // page sayfalarina obje olusturularak ulasildigi icin
         // kim page sayfasini kullanmak isterse

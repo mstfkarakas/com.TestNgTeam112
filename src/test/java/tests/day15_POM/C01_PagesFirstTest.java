@@ -1,6 +1,6 @@
 package tests.day15_POM;
-
 import org.openqa.selenium.Keys;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AmazonPage;
 import utilities.Driver;
@@ -24,6 +24,8 @@ public class C01_PagesFirstTest {
         // sonuclarin Nutella icerdigini test edelim
         String expectedContent = "Nutella";
         String actualSearchResultContent = amazonPage.searchResultElement.getText();
+        Assert.assertTrue(actualSearchResultContent.contains(expectedContent));
 
+        Driver.closeDriver();
     }
 }
