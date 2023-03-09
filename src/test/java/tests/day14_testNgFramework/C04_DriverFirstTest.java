@@ -1,4 +1,4 @@
-package tests.day014_testNgFramework;
+package tests.day14_testNgFramework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
