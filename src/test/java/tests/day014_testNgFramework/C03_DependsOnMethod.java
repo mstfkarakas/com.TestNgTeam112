@@ -9,19 +9,16 @@ public class C03_DependsOnMethod {
     public void youTubeTest(){
         System.out.println("YouTube");
         Assert.assertTrue(8==8);
-
     }
 
     @Test(priority = 3)
     public void wiseTest(){
         System.out.println("Wise Quarter");
-
     }
 
     @Test (dependsOnMethods = "youTubeTest")
     public void amazonTest(){
         System.out.println("Amazon");
-
     }
 
 }
