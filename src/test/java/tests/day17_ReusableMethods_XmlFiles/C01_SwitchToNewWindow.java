@@ -22,7 +22,8 @@ public class C01_SwitchToNewWindow {
         Driver.getDriver().get("https://the-internet.herokuapp.com/iframe");
 
 // click on elemental selenium link
-        Driver.getDriver().findElement(By.xpath("//*[text()='Elemental Selenium']")).click();
+        WebElement link = Driver.getDriver().findElement(By.xpath("//a[text()='Elemental Selenium']"));
+        ReusableMethods.clickWithTimeOut(link,3);  // bu metodu da denedim ama runningParallelClassesTest.xml yine fail oldu.
 
 
 //        Driver.getDriver().switchTo().newWindow(WindowType.TAB);

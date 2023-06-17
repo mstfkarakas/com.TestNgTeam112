@@ -3,6 +3,7 @@
     <test name="We will run Regression Tests">
         <packages>
             <package name="tests.*"></package>
+<!--            We run all the tests if it's a regression test.-->
         </packages>
     </test>
 </suite>

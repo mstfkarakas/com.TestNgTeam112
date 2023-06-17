@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Parallel Testing" parallel="classes" thread-count="2">
+    <test name="Trying to do parallel testing">
+        <classes>
+            <class name="tests.day16_POM_Assertions.C01_DriverClassLastVersion"></class>
+            <class name="tests.day16_POM_Assertions.C02_SingletonPattern"></class>
+            <class name="tests.day16_POM_Assertions.C03_SoftAssertions"></class>
+            <class name="tests.day17_ReusableMethods_XmlFiles.C01_SwitchToNewWindow"></class>
+        </classes>
+    </test>
+</suite>
+
+        <!-- suit'in icinde parallel="classes" thread-count="2" yazarsak, 2 tane browser class'lari sirayla run yapacak, bu sekilde testler daha hizli bitebilecek.-->

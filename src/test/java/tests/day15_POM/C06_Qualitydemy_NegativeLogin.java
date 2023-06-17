@@ -17,9 +17,9 @@ public class C06_Qualitydemy_NegativeLogin {
         Driver.getDriver().get(ConfigReader.getProperty("qualitydemyURL"));
         QualitydemyPage qualitydemyPage = new QualitydemyPage();
 
-        WebElement cookieAccept = Driver.getDriver().findElement(By.xpath("//a[text()='Accept']"));
+    /*  WebElement cookieAccept = Driver.getDriver().findElement(By.xpath("//a[text()='Accept']"));
         cookieAccept.click();
-
+    */
         // login linkine tiklayin
         qualitydemyPage.firstLoginLink.click();
 

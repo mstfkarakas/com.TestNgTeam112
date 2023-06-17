@@ -111,6 +111,7 @@ public class ReusableMethods {
     }
 
 
+    // int 3 dersen mesela, linki 3 kez tiklar, arada bir saniye bekler. Super kullanisli bir metod.
     public static void clickWithTimeOut(WebElement element, int timeout) {
         for (int i = 0; i < timeout; i++) {
             try {
