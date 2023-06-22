@@ -6,8 +6,8 @@ import org.testng.Assert;
 
 public class C02_SoftAssertion {
 
-        @Test
-        public void hardAssertion(){
+    @Test
+    public void hardAssertion() {
 
         /*
             Assert islemi ilk failed oldugunda
@@ -26,19 +26,19 @@ public class C02_SoftAssertion {
             ve failed olan varsa calismayi durdurur.
          */
 
-            int sayi = 36;
+        int sayi = 36;
 
-            Assert.assertTrue(sayi % 2 == 0,"Sayi cift olmali"); // sayi cift mi
+        Assert.assertTrue(sayi % 2 == 0, "Sayi cift olmali"); // sayi cift mi
 
-            Assert.assertTrue(sayi>100,"Sayi 100'den buyuk olmali"); // sayi 100'den buyuk mu ?
+        Assert.assertTrue(sayi > 100, "Sayi 100'den buyuk olmali"); // sayi 100'den buyuk mu ?
 
-            Assert.assertTrue(sayi < 1000,"Sayi 1000'den kucuk olmali"); // sayi 1000'den kucuk mu ?
+        Assert.assertTrue(sayi < 1000, "Sayi 1000'den kucuk olmali"); // sayi 1000'den kucuk mu ?
 
-            Assert.assertFalse(sayi % 3 == 0,"Sayi 3'e bolunememeli"); // sayinin 3 ile bolunemedigini test edin
-        }
+        Assert.assertFalse(sayi % 3 == 0, "Sayi 3'e bolunememeli"); // sayinin 3 ile bolunemedigini test edin
+    }
 
-        @Test
-        public void softAssertionTesti(){
+    @Test
+    public void softAssertionTesti() {
         /*
             SoftAssert class'i sayesinde
             assertAll()'nun calisacagi satira kadar
@@ -52,25 +52,24 @@ public class C02_SoftAssertion {
 
             Failed olan assertion'lari kolaylikla bulabilmemiz icin
          */
-            int sayi = 36;
+        int sayi = 36;
 
-            SoftAssert softAssert = new SoftAssert();
+        SoftAssert softAssert = new SoftAssert();
 
-            softAssert.assertTrue(sayi % 2 == 0,"sayi cift olmali"); // sayi cift mi
+        softAssert.assertTrue(sayi % 2 == 0, "sayi cift olmali"); // sayi cift mi
 
-            softAssert.assertTrue(sayi>100,"sayi 100'den buyuk olmali"); // sayi 100'den buyuk mu ?
+        softAssert.assertTrue(sayi > 100, "sayi 100'den buyuk olmali"); // sayi 100'den buyuk mu ?
 
-            softAssert.assertTrue(sayi < 1000,"sayi 1000'den kucuk olmalio"); // sayi 1000'den kucuk mu ?
+        softAssert.assertTrue(sayi < 1000, "sayi 1000'den kucuk olmalio"); // sayi 1000'den kucuk mu ?
 
-            softAssert.assertFalse(sayi % 3 == 0,"Sayi 3'e bolunememeli"); // sayinin 3 ile bolunemedigini test edin
+        softAssert.assertFalse(sayi % 3 == 0, "Sayi 3'e bolunememeli"); // sayinin 3 ile bolunemedigini test edin
 
-            softAssert.assertAll();
+        softAssert.assertAll();
 
-            // softAssert objesi ile assertion'lari yaptiktan sonra
-            // assertAll() kullanmazsaniz, test direk PASSED olur,
-            // failed olan assertion'lar raporlanmaz
-
-        }
+        // softAssert objesi ile assertion'lari yaptiktan sonra
+        // assertAll() kullanmazsaniz, test direk PASSED olur,
+        // failed olan assertion'lar raporlanmaz
 
     }
+
 }
